@@ -1,26 +1,37 @@
-//finding class average using countercontrolled loop
+//finding class average using sentinelcontrolled  loop
 import  java.util.Scanner;
 public class Average {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        //initialize total number of students
+        //intialize v
         int total = 0;
-        //intitialize grade conunter starting from first value
-        int gradecounter = 1;
+        int counter = 0;
 
-        //while loop to ensure grades are 10
-        while (gradecounter <= 10) {
-            System.out.println("Enter your grade: ");
-            int grade = input.nextInt();
-            total += grade;
-            gradecounter++;
+        //prompt user to enter grade
+        System.out.print("Enter grade or -1 ");
+        int grade = input.nextInt();
+
+        while(grade != -1){
+            total = total + grade;
+            grade++;
+
+            System.out.print("Enter grade or -1 ");
+            grade = input.nextInt();
+
         }
 
-        //average
-        int average = total / 10;
 
-        System.out.printf("Total grades is %d\n", total);
-        System.out.printf("The avearge of the grades is %d\n", average);
+
+
+
+        if (counter != 0){
+            //calculate average
+            int average = total/ counter;
+            //print average
+            System.out.println("The avearage is: " + average);
+        }
+        else
+            System.out.println("no grades were entered");
     }
 }
