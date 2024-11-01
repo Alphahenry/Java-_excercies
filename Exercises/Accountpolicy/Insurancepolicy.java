@@ -16,27 +16,27 @@ public class Insurancepolicy {
         this.state = state;
 
     }
-
+    // setMethod for account number
     public void setAccountNumber(int accountNumber) {
         this.accountNumber = accountNumber;
     }
-
+    // get method for account number
     public int getAccountNumber() {
         return accountNumber;
     }
-
+   //set method for make n model
     public void setMake_model(String make_model) {
         this.make_model = make_model;
     }
-
+    //get method for make n model
     public String getMake_model() {
         return make_model;
     }
-
+   //set method for state
     public void setState(String state) {
         this.state = state;
     }
-
+   // get method for state
     public String getState() {
         return state;
     }
