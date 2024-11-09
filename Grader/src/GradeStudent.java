@@ -3,11 +3,11 @@ public class GradeStudent {
     public static void main(String[] args) {
 
         //grade calculator
-        //
 
 
         Scanner input = new Scanner(System.in);
         // no of students
+        System.out.println("Enter no of students");
         int num_students = input.nextInt();
 
         //registration no of students
