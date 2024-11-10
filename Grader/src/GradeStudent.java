@@ -7,7 +7,7 @@ public class GradeStudent {
 
         Scanner input = new Scanner(System.in);
         // no of students
-        System.out.println("Enter no of students");
+        System.out.println("Enter no of students: ");
         int num_students = input.nextInt();
 
         //registration no of students
@@ -39,11 +39,11 @@ public class GradeStudent {
 
         //display results
 
-        System.out.print("..............Student Grade Resuts.................................");
-        System.out.print("Name\t.RegNo\t.marks\t. grade\t\n");
+        System.out.println("..............Student Grade Resuts.................................");
+        System.out.print("Name\tRegNo\tmarks\tgrade\t\n");
 
         for (int i = 0; i < num_students; i++) {
-            System.out.printf("%s\t%s\t\t%f\t\t%c", names[i], reg_no[i], marks[i], grade[i]);
+            System.out.printf("%s\t%s\t%.1f\t%c\t\n", names[i], reg_no[i], marks[i], grade[i]);
         }
 
 
