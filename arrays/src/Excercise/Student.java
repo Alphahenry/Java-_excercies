@@ -20,6 +20,7 @@ public class Student {
         Scanner input = new Scanner(System.in);
 
         //request no of students
+        System.out.println("enter number of students: ");
         int numStudents = input.nextInt();
 
         // Track HighestScore
@@ -28,8 +29,11 @@ public class Student {
         //use array to store students grades
         int[] marks = new int[numStudents];
         for (int i = 0; i <numStudents; i++){
-            System.out.println("Enter student grade: ");
+            System.out.println("Enter student marks: ");
             marks[i] = input.nextInt();
+            if (marks[i] > highestScore){
+                highestScore = marks[i];
+            }
         }
         /*
         * Grade is A if score is Ú best -5
@@ -40,7 +44,28 @@ public class Student {
         *
         * */
 
-        
+        for (int i = 0; i < numStudents;i++ ){
+            char grade;
+            int mark = marks[i];
+            if (mark >= highestScore -5){
+                grade = 'A';
+
+            } else if (mark >= highestScore -10) {
+                grade = 'B';
+
+            } else if (mark >= highestScore -15) {
+                grade = 'c';
+            }
+            else if (mark >= highestScore - 20) {
+                grade = 'D';
+            }
+            else
+                grade = 'F';
+
+            System.out.println("Student " + (i + 1) + " score: " + mark + " - Grade: " + grade);
+        }
+
+
 
     }
 }
