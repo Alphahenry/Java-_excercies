@@ -49,7 +49,7 @@ public class GeometricObject {
 
 
 
-    //
+    //display information
 
 
     public String toString(){
