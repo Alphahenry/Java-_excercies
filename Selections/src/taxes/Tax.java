@@ -43,6 +43,23 @@ public class Tax {
             }
         }
 
+        else if(Tax_bracket == 1){
+            if (income <= 16700) {
+                tax = 16700 * 0.1;
+                
+            }
+            else if (income <= 67900) {
+                tax = 16700 * 0.1 + (income - 67900) * 0.15;
+            }
+            else if (income <= 137050) {
+                tax = 16700 * 0.1 + 67900 * 0.15 + 137050* 0.25;
+                
+            }
+            else{
+                tax = 16700 * 0.1 + 67900 * 0.15 + 137050* 0.25 + (income - 208850) * 0.33;
+            }
+        }
+
       System.out.println("Your total tax is : " + tax);
         
     }
