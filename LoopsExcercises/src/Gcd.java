@@ -19,17 +19,28 @@ public class Gcd {
     
 
  //lets get the minimum of the two;
+       int remainder;
+do {
+    if(n1 < n2){
+        remainder = n2 % n1;
+    }
+    else{
+        remainder = n1 % n2;
+    }
 
-       if(n1 < n2){
-           int remainder = n2 % n1;
-       }
-       else{
-           int remainder = n1 % n2;
-       }
-
-    
-    
  
+      @SuppressWarnings("unused")
+     int temp = n1;
+      n1  = n2;
+      n2 = remainder;  
+
+      
+
+    
+} while (remainder != 0);
+
+System.out.println("GSd is :" + remainder);
+  
     }
 
 }
