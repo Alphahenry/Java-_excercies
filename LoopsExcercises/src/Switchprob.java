@@ -23,8 +23,10 @@ public class Switchprob {
                 break;      
         
             default: 
+            System.out.println("Item not found!");
                 break;
         }
+        input.close();
     }
 
 }
