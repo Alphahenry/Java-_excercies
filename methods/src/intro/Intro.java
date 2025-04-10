@@ -5,8 +5,11 @@ public class Intro {
 
     public static void main(String[] args) {
      // int res =   sum();
-        int res2 = sum2();
-        System.out.println("rsult is " + res2);
+       // int res2 = sum2();
+        //System.out.println("rsult is " + res2);
+
+        sum3(3,8);
+
         
     }
 
@@ -41,5 +44,15 @@ public class Intro {
         return  avg;
 
     }
+    //summing using parameters
+    static  int sum3(int a, int b){
+        int res = a + b;
+        System.out.println("The sum is: " + res);
+        return  res;
+    }
+
+
+
+
 
 }
